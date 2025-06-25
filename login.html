@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <h2>Enter Password</h2>
+  <input type="password" id="pw">
+  <button onclick="checkPassword()">Enter</button>
+
+  <script>
+    function checkPassword() {
+      const pw = document.getElementById("pw").value;
+      if (pw === "brine123") {
+        window.location.href = "index.html";
+      } else {
+        alert("Wrong password!");
+      }
+    }
+  </script>
+</body>
+</html>
